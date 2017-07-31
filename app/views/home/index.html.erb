@@ -1,0 +1,11 @@
+<form action="/home/create" method="post" data-remote="true">
+    <label>댓글 작성</label>
+    <input type="text" name="body" id="comment_body">
+    <input type="submit">
+</form>
+<div id="body">
+    <% @comments.each do |comment| %>
+        <hr>
+        <%= comment.body%>
+    <% end %>
+</div>
